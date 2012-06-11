@@ -46,7 +46,9 @@ set nocompatible               " be iMproved
  Bundle 'Lokaltog/vim-powerline'
  " non github repos
  Bundle 'git://git.wincent.com/command-t.git'
- " ...
+
+Bundle  'othree/html5.vim'
+Bundle  'kchmck/vim-coffee-script'
 
  filetype plugin indent on     " required! 
  "
@@ -59,7 +61,7 @@ set nocompatible               " be iMproved
  " see :h vundle for more details or wiki for FAQ
  " NOTE: comments after Bundle command are not allowed..
  :let mapleader=","
- :map <F2> :NERDTree<cr>
+ :map <F2> :NERDTreeToggle<cr>
  :map fb :FufBuffer<cr>
  :map <leader>ss :source ~/.vimrc<cr>
  :map <leader>ee :edit ~/.vimrc<cr>
@@ -67,7 +69,7 @@ set nocompatible               " be iMproved
  set number
 set sw=2     "shiftwidth=4
 "set ts=2
-set tags=/home/bob/.ctags
+set tags=/home/bob/.tags
 
 set fencs=utf-8,gb18030,gbk,gb2312
 set encoding=utf-8
@@ -86,4 +88,4 @@ if v:version > 702
 endif
 autocmd FileType html 
 set ft=html.markdown
-let g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols = 'fancy'
