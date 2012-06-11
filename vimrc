@@ -44,6 +44,7 @@ set nocompatible               " be iMproved
  Bundle 'vim-scripts/AutoComplPop'
  Bundle 'msanders/snipmate.vim'
  Bundle 'Lokaltog/vim-powerline'
+ Bundle 'vim-scripts/taglist.vim'
  " non github repos
  Bundle 'git://git.wincent.com/command-t.git'
 
@@ -88,4 +89,10 @@ if v:version > 702
 endif
 autocmd FileType html 
 set ft=html.markdown
-"let g:Powerline_symbols = 'fancy'
+" let g:Powerline_symbols = 'fancy'
+
+" 此四行解决所有乱码问题
+"set langmenu=zh_CN.utf8
+"set fileencodings=utf-8,cp936,big5,latin1
+"set ambiwidth=double
+"let $LANG='en'
